@@ -16,4 +16,21 @@ public class OrderItem {
         return unitPrice.multiply(
                 BigDecimal.valueOf(quantity));
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public BigDecimal getUnitPrice() {
+        return unitPrice;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
 }
