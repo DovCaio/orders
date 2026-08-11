@@ -2,11 +2,14 @@ package com.orders.demo.adapter.output.persistence;
 
 import java.util.Optional;
 
+import org.springframework.stereotype.Component;
+
 import com.orders.demo.adapter.output.persistence.entity.ProductEntity;
 import com.orders.demo.adapter.output.persistence.repository.JpaProductRepository;
 import com.orders.demo.application.port.output.ProductRepository;
 import com.orders.demo.domain.model.Product;
 
+@Component
 public class ProductPersistenceAdapter implements ProductRepository {
 
     private final JpaProductRepository repository;

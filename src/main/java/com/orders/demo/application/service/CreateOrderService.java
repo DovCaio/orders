@@ -2,6 +2,8 @@ package com.orders.demo.application.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.orders.demo.application.port.input.CreateOrderCommand;
 import com.orders.demo.application.port.input.CreateOrderItemCommand;
 import com.orders.demo.application.port.input.CreateOrderUseCase;
@@ -11,6 +13,7 @@ import com.orders.demo.domain.model.Order;
 import com.orders.demo.domain.model.OrderItem;
 import com.orders.demo.domain.model.Product;
 
+@Service
 public class CreateOrderService implements CreateOrderUseCase {
 
     private final OrderRepository orderRepository;
