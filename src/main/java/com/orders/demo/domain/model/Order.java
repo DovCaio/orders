@@ -50,4 +50,20 @@ public class Order {
         return order;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public List<OrderItem> getItems() {
+        return items;
+    }
+
+    public BigDecimal getTotal() {
+        return total;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
 }
