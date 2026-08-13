@@ -19,7 +19,7 @@ public class CreateProductService implements CreateProductUseCase {
 
     @Override
     public Product execute(CreateProductCommand command) {
-        Product product = new Product(command.name(), command.price());
+        Product product = Product.create(command.name(), command.price());
         return productRepository.save(product);
     }
 

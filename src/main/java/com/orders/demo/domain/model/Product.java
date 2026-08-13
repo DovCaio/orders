@@ -13,9 +13,19 @@ public class Product {
     private String name;
     private BigDecimal price;
 
-    public Product(String name, BigDecimal price) {
-        this.name = name;
-        this.price = price;
+    public static Product create(String name, BigDecimal price) {
+        if (name == null || name.isEmpty()) {
+            throw new IllegalArgumentException(
+                    "Product name must not be empty.");
+        }
+
+        if (price == null || price.compareTo(BigDecimal.ZERO) <= 0) {
+            throw new IllegalArgumentException(
+                    "Product price must be greater than zero.");
+        }
+
+        return new Product(null, name, price);
+
     }
 
 }
