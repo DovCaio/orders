@@ -29,6 +29,20 @@ public class Order {
         status = Status.PAID;
     }
 
+    public void cancel() {
+        if (status == Status.CANCELLED) {
+            throw new IllegalStateException(
+                    "A cancelled order cannot be cancelled");
+        }
+
+        if (status == Status.PAID) {
+            throw new IllegalStateException(
+                    "A paided order cannot be cancelled");
+        }
+
+        status = Status.CANCELLED;
+    }
+
     private static BigDecimal calculateTotal(List<OrderItem> items) {
         return items.stream()
                 .map(OrderItem::getSubtotal)
