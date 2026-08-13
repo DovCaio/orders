@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.orders.demo.adapter.input.web.dto.CreateOrderRequest;
-import com.orders.demo.adapter.input.web.dto.CreateOrderResponse;
+import com.orders.demo.adapter.input.web.dto.order.CreateOrderRequest;
+import com.orders.demo.adapter.input.web.dto.order.CreateOrderResponse;
 import com.orders.demo.adapter.input.web.mapper.OrderRequestMapper;
 import com.orders.demo.application.port.input.CreateOrderCommand;
 import com.orders.demo.application.port.input.CreateOrderUseCase;
