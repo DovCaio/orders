@@ -3,5 +3,5 @@ package com.orders.demo.adapter.input.web.dto;
 import java.util.List;
 
 public record CreateOrderRequest(
-        List<CreateOrderItemRequest> items) {
+                List<CreateOrderItemRequest> items) {
 }

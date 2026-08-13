@@ -3,7 +3,6 @@ package com.orders.demo.adapter.output.persistence;
 import org.springframework.stereotype.Component;
 
 import com.orders.demo.adapter.output.persistence.entity.OrderEntity;
-import com.orders.demo.adapter.output.persistence.mapper.OrderItemMapper;
 import com.orders.demo.adapter.output.persistence.mapper.OrderMapper;
 import com.orders.demo.adapter.output.persistence.repository.JpaOrderRepository;
 import com.orders.demo.application.port.output.OrderRepository;

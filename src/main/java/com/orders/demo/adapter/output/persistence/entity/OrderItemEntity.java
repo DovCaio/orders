@@ -2,8 +2,6 @@ package com.orders.demo.adapter.output.persistence.entity;
 
 import java.math.BigDecimal;
 
-import com.orders.demo.domain.model.Product;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
@@ -18,7 +16,6 @@ public class OrderItemEntity {
     private Long id;
     @ManyToOne
     @JoinColumn(name = "order_id")
-
     private OrderEntity orderEntity;
     @ManyToOne
     @JoinColumn(name = "product_id")
